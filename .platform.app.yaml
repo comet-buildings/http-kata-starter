@@ -9,6 +9,14 @@ name: app
 # to find the supported versions for the 'nodejs' type.
 type: 'nodejs:12'
 
+dependencies:
+    nodejs:
+      yarn: "*"
+
+hooks:
+    build: |
+        yarn install
+
 web:
   commands:
     start: 'yarn start'
