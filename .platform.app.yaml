@@ -17,6 +17,10 @@ hooks:
     build: |
         yarn install
 
+relationships:
+    postgresdatabase: "dbpostgres:postgresql"
+    rediscache: "cacheredis:redis"
+
 web:
   commands:
     start: 'yarn start'
