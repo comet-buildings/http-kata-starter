@@ -7,11 +7,11 @@ app.use(bodyParser());
 const router = new Router();
 
 router.get('/*', async (ctx) => {
-    ctx.body = `Hello World!... ${JSON.stringify(process.env)}`;
+    ctx.body = `Hello World!... ${JSON.stringify(process.env, null, 2)}`;
 });
 
 app.use(router.routes());
 
-app.listen(8888);
+app.listen(process.env.PORT);
 
-console.log('Server running on port 8888');
+console.log(`Server running on port ${process.env.PORT}`);
