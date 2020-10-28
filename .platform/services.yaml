@@ -1,9 +1,0 @@
-dbpostgres:
-    type: postgresql:12
-    disk: 256
-    configuration:
-        extensions:
-            - pgcrypto
-
-cacheredis:
-    type: redis:6.0
