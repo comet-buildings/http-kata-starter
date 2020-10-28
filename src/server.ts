@@ -7,7 +7,7 @@ app.use(bodyParser());
 const router = new Router();
 
 router.get('/*', async (ctx) => {
-    ctx.body = 'Hello World!..';
+    ctx.body = `Hello World!... ${JSON.stringify(process.env)}`;
 });
 
 app.use(router.routes());
