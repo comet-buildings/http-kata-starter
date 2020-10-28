@@ -12,6 +12,6 @@ router.get('/*', async (ctx) => {
 
 app.use(router.routes());
 
-app.listen(8888);
+app.listen(8080);
 
 console.log('Server running on port 8888');

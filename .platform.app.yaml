@@ -17,10 +17,6 @@ hooks:
     build: |
         yarn install
 
-variables:
-    env:
-        PORT: 8080
-
 web:
   commands:
     start: 'yarn start'
