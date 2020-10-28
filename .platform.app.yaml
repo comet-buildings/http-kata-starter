@@ -11,4 +11,4 @@ type: 'nodejs:12'
 
 web:
   commands:
-    start: 'node index.js'
+    start: 'yarn start'
